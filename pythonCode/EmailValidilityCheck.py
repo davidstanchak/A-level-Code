@@ -1,7 +1,7 @@
 email = input("Enter your email adress: ")
 validAt = False
 validDot = False
-while validAt == False and while validDot == False:
+while validAt == False and validDot == False:
     for i in range(0,len(email)):
         if email[i] == "@":
             validAt = True
@@ -10,6 +10,8 @@ while validAt == False and while validDot == False:
 
 if validAt == True and validDot == True:
     print("Email valid")
+else:
+    print("Email invalid")
         
     
 
