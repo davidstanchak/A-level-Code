@@ -12,8 +12,3 @@ if validAt == True and validDot == True:
     print("Email valid")
 else:
     print("Email invalid")
-        
-    
-
-            
-    
