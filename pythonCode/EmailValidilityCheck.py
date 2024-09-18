@@ -1,7 +1,7 @@
 import re
 email = input("Enter your email adress: ")
 
-if re.match(r"^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]+",email):
+if re.match(r"^[a-z|A-Z|0-9]+@[a-z|A-Z|0-9]+.[a-z|A-Z]+",email):
     print("Valid")
 else:
     print("Invalid")
