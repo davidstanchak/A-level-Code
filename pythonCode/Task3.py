@@ -36,6 +36,8 @@ while entry == False:
         entry = True
     else:
         print("Incorrect ID or PIN - Try again")
+
+entry = True
             
 
 
