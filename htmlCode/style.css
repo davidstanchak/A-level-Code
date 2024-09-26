@@ -7,17 +7,17 @@ body {
 
 h1 {
     background-color: #333;
-    color: white;
+    color: rgb(216, 15, 15);
     padding: 10px;
-    text-align: center;
+    text-align: right;
     transition-duration: 0.2s;
 }
 
 h1:hover {
     transform: rotate3d(1, 1, 1, 3600deg);
-    transition-duration: 0.2s;
+    transition-duration: 5s;
 }
 img:hover {
     transform: rotate3d(1, 1, 1, 3600deg);
-    transition-duration: 5s;
+    transition-duration: 10s;
 }
