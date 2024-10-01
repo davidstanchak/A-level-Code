@@ -38,10 +38,3 @@ while entry == False:
         print("Incorrect ID or PIN - Try again")
 
 entry = True
-            
-
-
-
-
-
-
