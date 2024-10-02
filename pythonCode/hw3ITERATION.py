@@ -1,16 +1,3 @@
-#    letters = input("enter 5 lowercase letters")
- #   largest = letters[0]
-  #  alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-#
- #   L_count = 0
-  #  finish = False
-   # while finish == False:
-    #    for i in range(len(alphabet)):
-     #       if alphabet[i] == letters[L_count]:
-      #          position = i
-       #     elif L_count == 0:
-#
- #               if i > largest
 letters = input("enter 5 lowercase letters: \n")
 alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 letters_array = []
