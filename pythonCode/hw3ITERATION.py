@@ -16,4 +16,3 @@ for i in range(0,5):
                 smallest = position
 
 print(alphabet[smallest]," is the smallest letter. ", alphabet[largest], " is the largest letter")
-    
