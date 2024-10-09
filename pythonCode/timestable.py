@@ -10,3 +10,6 @@ table = int(input("Enter the table"))
 startnum = int(input("Enter the start number"))
 endnum = int(input("Enter the end number"))
 multiples(table,startnum,endnum,pupilName)
+
+def multiples(table,startnum,endnum,pupilName):
+    
