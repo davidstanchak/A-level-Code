@@ -7,4 +7,3 @@ for i in range(1,enter+1):
 f = open("file.txt", "r")
 print(f.read())
 f.close()
-

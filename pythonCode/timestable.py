@@ -12,4 +12,3 @@ endnum = int(input("Enter the end number"))
 multiples(table,startnum,endnum,pupilName)
 
 def multiples(table,startnum,endnum,pupilName):
-    
