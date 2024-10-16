@@ -1,0 +1,12 @@
+.compSciWebsite {
+  border-radius: 15px;
+  background-color: blanchedalmond;
+  height: auto;
+  width: auto;
+  transition: 0.5s;
+}
+.compSciWebsite:hover {
+  background-color: red;
+  
+  
+}
