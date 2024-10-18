@@ -1,1 +1,7 @@
-HelloHello
+def name():
+    if n == 0:
+        return total
+    else:
+        return total + name(n-2)
+total = name(n)
+print(total)
