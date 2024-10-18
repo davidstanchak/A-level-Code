@@ -3,10 +3,14 @@
   background-color: blanchedalmond;
   height: auto;
   width: auto;
-  transition: 0.5s;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition-duration: 3s;
 }
 .compSciWebsite:hover {
-  background-color: red;
-  
-  
+  background-color: black;
+  cursor: pointer;
+  color:white;
+  padding: 1000px;
+  rotate: 360deg;
+
 }
