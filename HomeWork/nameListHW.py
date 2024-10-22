@@ -19,7 +19,7 @@ def display_list(array):
     
 def displayMenu():
     redo = True
-    array = ["random","random","random","random","random","random","random","random","random","random"]
+    array = ["random"]*10
     while redo == True:
         choice = input("Choose an option. Add name (1), Display list (2), Quit (3). \n")
         if choice == "1" or choice == "2" or choice == "3":

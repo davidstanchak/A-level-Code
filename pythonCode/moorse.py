@@ -1,5 +1,5 @@
 #convert user input into moorse code
-
+import moorse
 user_sentence = input("Enter a sentence for it to be converted into moorse code: \n")
 user_sentence = user_sentence.lower()
 user_sentence_split = user_sentence.split()
