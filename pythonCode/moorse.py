@@ -20,9 +20,12 @@ for i in range(len(user_sentence_split)):
         all_letters.append(NewLetterList)
 
 def alphabet_checker(check):
-    a = [chr(i) for i in range(97, 123)]
+    import string  
+  
+
+    a = list(string.ascii_lowercase)
     m = ['.-', '-...', '-.-.', '-..', '.', '..-.', '--.', '....', '..', '.---', '-.-', '.-..', '--', '-.', '---', '.--.', '--.-', '.-.', '...', '-', '..-', '...-', '.--', '-..-', '-.--', '--..']
-    for i in range(1,24):
+    for i in range(24):
         if a[i-1] == check:
             moorse = m[i]
             return moorse
@@ -33,9 +36,12 @@ for a in range(len(all_letters)): #there are "how many" arrays/words in the 2d a
         moorse_equivilant = alphabet_checker(check)
         all_letters[a][b] = moorse_equivilant
 all_letters = str(all_letters)
-all_letters = all_letters.replace("[","")
-all_letters = all_letters.replace("]"," /")
-all_letters = all_letters.replace("/ /"," / / ")
-all_letters = all_letters.replace(","," ")
-all_letters = all_letters.replace("'","")
+import re
+import re
+
+all_letters = re.sub(r"[\[\]',]|(?<=/) +|(?<=\S)/|/(?=\S)", " ", all_letters)
+
+
+
+
 print(all_letters,"\n\na large gap indicates a new letter, a forward slash indicates a new word, a double backward slash indicates the end of the sentence.")
