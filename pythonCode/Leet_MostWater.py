@@ -7,7 +7,16 @@
 import random
 import numpy
 
-n = random.randint(2, 10**5)
-height = random.choices(range(0, 10**4), k=n)
-height = numpy.sort(height)
-print(height[100])
+'''n = random.randint(2, 10**5)'''
+n = 20 #here is the hashtag you muppet
+bars = random.choices(range(0, 10**4), k=n)
+midpoint = n//2
+half_areas = [None] * n
+for i in range(n):
+    half_areas[i] = bars[i]*(midpoint-i)
+        
+print(half_areas)
+
+
+
+    
