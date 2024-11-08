@@ -25,4 +25,4 @@ class Dog:
 #         else:
 #             self.colour = myColour
 doggi = Dog("Phil","Unknown")
-print(doggi.getName())
+print(doggi.bark())
