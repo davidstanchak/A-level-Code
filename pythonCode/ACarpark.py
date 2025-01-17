@@ -1,27 +1,11 @@
-CarParkArray = [["empty", "empty", "empty", "empty", "empty", "empty"],
-                ["empty", "empty", "empty", "empty", "empty", "empty"],
-                ["empty", "empty", "empty", "empty", "empty", "empty"],
-                ["empty", "empty", "empty", "empty", "empty", "empty"],
-                ["empty", "empty", "empty", "empty", "empty", "empty"],
-                ["empty", "empty", "empty", "empty", "empty", "empty"],
-                ["empty", "empty", "empty", "empty", "empty", "empty"],
-                ["empty", "empty", "empty", "empty", "empty", "empty"],
-                ["empty", "empty", "empty", "empty", "empty", "empty"],
-                ["empty", "empty", "empty", "empty", "empty", "empty"]]
+CarParkArray = [["empty"] * 6 for _ in range(10)]
+
 
 repeat = True
 while repeat == True:
     def option1():
-        CarParkArray = [["empty", "empty", "empty", "empty", "empty", "empty"],
-                        ["empty", "empty", "empty", "empty", "empty", "empty"],
-                        ["empty", "empty", "empty", "empty", "empty", "empty"],
-                        ["empty", "empty", "empty", "empty", "empty", "empty"],
-                        ["empty", "empty", "empty", "empty", "empty", "empty"],
-                        ["empty", "empty", "empty", "empty", "empty", "empty"],
-                        ["empty", "empty", "empty", "empty", "empty", "empty"],
-                        ["empty", "empty", "empty", "empty", "empty", "empty"],
-                        ["empty", "empty", "empty", "empty", "empty", "empty"],
-                        ["empty", "empty", "empty", "empty", "empty", "empty"]]
+        CarParkArray = [["empty"] * 6 for _ in range(10)]
+
         print("All car park spaces are now empty. \n")
     def option2(placeAvailable):
         while placeAvailable == False:
