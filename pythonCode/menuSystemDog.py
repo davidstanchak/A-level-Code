@@ -20,7 +20,7 @@ while quit != True:
 
     choice = int(input("Do you want to find(1), sell(2), or add(3) dogs. Type anything else to quit."))
     if choice == 1:
-        name = input("What dog would you like to add?")
+        name = input("What dog would you like to find?")
         find(name)
     elif choice == 2:
         name = input("What dog would you like to sell?")
