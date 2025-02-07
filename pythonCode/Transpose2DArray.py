@@ -12,22 +12,36 @@ def noneAdd(array):
     
     for i in range(len(array)):
         while len(array[i]) != greatestArrayLength:
-            array[i].append(None)
+            array[i].append(0)
             
     return array
 
-def transpose():
+def transpose(array):
     collumnToRow = []
     transposedArray = []
     for i in range(greatestArrayLength):
         for j in range(len(array)):
-            collumnToRow += str(array[j][i])
+            collumnToRow.append(array[j][i])
 
         transposedArray.append(collumnToRow)
     return transposedArray
 
-t1 = transpose()
-print(t1)
+def zeroRemove(transposedArray):
+    removeZeroRow = []
+    transposedArrayFinal = []
+    for i in range(len(transposedArray)):
+        for j in range(greatestArrayLength):
+            if transposedArray[i][j] != 0:
+                removeZeroRow.append(array[j][i])
+
+        transposedArrayFinal.append(removeZeroRow)
+    return transposedArrayFinal
+
+array = noneAdd(array)
+t1 = transpose(array)
+final = zeroRemove(t1)
+print(final)
+
 
 
 
