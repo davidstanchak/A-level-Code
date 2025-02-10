@@ -2,6 +2,10 @@ array = [["1","2","3","4","5"],
          ["6","7","8","9","10","11","12"],
          ["13","14","15","16","17","18", "19","20"]]
 
+FinalArray = [[1,6,13],[2,7,14],[3,8,15],[4,9,16],[5,10,17],[11,18],[12,19],[20]]
+
+
+
 def noneAdd(array):
     global greatestArrayLength
     greatestArrayLength = 0
@@ -12,7 +16,7 @@ def noneAdd(array):
     
     for i in range(len(array)):
         while len(array[i]) != greatestArrayLength:
-            array[i].append(0)
+            array[i].append("0")
             
     return array
 
@@ -36,11 +40,13 @@ def zeroRemove(transposedArray):
 
         transposedArrayFinal.append(removeZeroRow)
     return transposedArrayFinal
+    
 
 array = noneAdd(array)
 t1 = transpose(array)
-final = zeroRemove(t1)
-print(final)
+print(t1) 
+
+
 
 
 
