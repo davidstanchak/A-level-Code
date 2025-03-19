@@ -11,4 +11,4 @@ while len(stack1) != 0:
 if ("".join(reversedList)) == myString: #checking if the reversedList (joined up together) is equal to the original input to see if it is a palindrome.
     print("This is a palindrome")
 else: 
-    print("This is not a palindrome")
+    print("This is not a palindrome") 
