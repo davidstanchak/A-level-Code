@@ -39,10 +39,12 @@ stack = [None]*(top+1)
 
 for i in range(top+1):
     stack[i] = array[i]
-
+    
 for i in range(top+1):
-    reversedStack[i] = pop()
+    reversedStack[i] = stack.pop()
+    
 print(reversedStack)
+
 
     
 
