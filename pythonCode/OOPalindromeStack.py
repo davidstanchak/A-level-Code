@@ -12,42 +12,36 @@ class Stack():
         self.top = current.prev # changing top to previous item, essentialy -1 in arrays
         return current.data # return data of the popped item
     
-    def push(self, newData):
-        newNode = Node(newData)
+    def push(self, letter):
+        newNode = Node(letter)
         newNode.prev = self.top
         self.top = newNode
 
     def peek(self):
         print(self.top.data)
 
-class Palindrome:
-    def __init__(self):
-        self.pal = []
-    
-    def palindrome(self):
-        for i in range(self.top+1):
-            self.pal.append(people.pop())
-        
-
-        
-
-        
-
-    
-    
-
-
 class Node():
     #constructor
     def __init__(self, theData): 
         self.data = theData
         self.prev = None
+#################################################################################
+enterWord = str(input("Enter a word: ")).lower()
+word = Stack(enterWord)
 
-people = Stack("Altaf")
+l = len(enterWord)
+palindrome = True
 
-people.push("Bob")
-people.peek("John")
+for i in range(l):
+    word.push(enterWord[i])
 
+j=0
+while j< l and palindrome == True:
+    if enterWord[j] != word.pop():
+        palindrome = False
+    j += 1
 
-
-
+if palindrome == True:
+    print("This word is a palindrome.")
+else:
+    print("This word is not a palindrome.")
