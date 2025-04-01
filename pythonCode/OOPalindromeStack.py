@@ -36,7 +36,7 @@ for i in range(l):
     word.push(enterWord[i])
 
 j=0
-while j< l and palindrome == True:
+while j < l and palindrome == True:
     if enterWord[j] != word.pop():
         palindrome = False
     j += 1
