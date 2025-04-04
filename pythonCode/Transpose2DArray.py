@@ -44,10 +44,4 @@ def zeroRemove(transposedArray):
 
 array = noneAdd(array)
 t1 = transpose(array)
-print(t1) 
-
-
-
-
-
-
+print(t1)
