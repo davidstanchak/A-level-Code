@@ -16,15 +16,17 @@
 #             prev = items[j]
 #             items[j] = items[j+1]
 #             items[j+1] = prev
-
+import random
 # print(items)
 def insertionSort():      
-    items = [33, 4, 50, 18, 7, 45, 25, 39, 12, 29]
+    # items = [33, 4, 50, 18, 7, 45, 25, 39, 12, 29]
+    items = [random.randint(1, 100) for _ in range(10)]
+
     length = len(items)
     for j in range(1,length):
         nextItem = items[j]
         i = j-1
-        print(items)
+
         while i >= 0 and items[i] > nextItem:
             items[i+1] = items[i]
             i = i-1
